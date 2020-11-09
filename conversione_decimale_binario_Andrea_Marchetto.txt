@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "inserisci il numero da convertire \n";
+  int numero;
+  cin >> numero;
+  cout << "numero di partenza: " << numero << "\n";
+  string b;
+  while(numero > 0) {
+    if(numero % 2 == 0) {
+      b = "0" + b;
+    }
+    else {
+      b = "1" + b;
+    }
+    numero = numero / 2;
+  }
+  cout << "numero convertito: " << b << "\n";
+}
